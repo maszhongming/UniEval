@@ -1,0 +1,68 @@
+In NLI Task:
+docnli datasets:
+positive samples: 29687
+negative samples: 30313
+total samples: 60000
+mrpc datasets:
+positive samples: 3893
+negative samples: 1908
+total samples: 5801
+qqp datasets:
+positive samples: 7467
+negative samples: 12533
+total samples: 20000
+Statistics of NLI datasets:
+positive samples: 41047
+negative samples: 44754
+total samples: 85801
+----------------------------------------------------
+In SST Task:
+fsp datasets:
+positive samples: 30000
+negative samples: 30000
+total samples: 60000
+Statistics of SST datasets:
+positive samples: 30000
+negative samples: 30000
+total samples: 60000
+----------------------------------------------------
+In QA Task:
+boolq datasets:
+positive samples: 7907
+negative samples: 4790
+total samples: 12697
+boolq_cs datasets:
+positive samples: 165
+negative samples: 170
+total samples: 335
+boolq_np datasets:
+positive samples: 7697
+negative samples: 6795
+total samples: 14492
+multirc datasets:
+positive samples: 192
+negative samples: 122
+total samples: 314
+strategyqa datasets:
+positive samples: 1071
+negative samples: 1219
+total samples: 2290
+Statistics of QA datasets:
+positive samples: 17032
+negative samples: 13096
+total samples: 30128
+----------------------------------------------------
+In LIN Task:
+cola datasets:
+positive samples: 6744
+negative samples: 2850
+total samples: 9594
+Statistics of LIN datasets:
+positive samples: 6744
+negative samples: 2850
+total samples: 9594
+----------------------------------------------------
+Total Statistics of Intermediate datasets:
+positive samples: 94823
+negative samples: 90700
+total samples: 185523
