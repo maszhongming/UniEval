@@ -67,7 +67,8 @@ class SumEvaluator:
                 for i in range(n_data):
                     src_list.append(data[i]['source'])
                     output_list.append(data[i]['system_output'])
-                    ref_list.append(data[i]['reference'])
+                    if dim == 'relevance':
+                        ref_list.append(data[i]['reference'])
                 input_list = add_question(dimension=dim, output=output_list, 
                                           src=src_list, ref=ref_list, task=self.task)
                 score = self.scorer.score(input_list)
