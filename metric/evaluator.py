@@ -44,7 +44,10 @@ class SumEvaluator:
                 src_list, output_list = [], []
                 n_sents = [] # the number of sentences in each generated summary
                 for i in range(n_data):
-                    source = data[i]['source']
+                    if dim == 'consistency':
+                        source = data[i]['source']
+                    else:
+                        source = ''
                     system_outputs = sent_tokenize(data[i]['system_output'])
                     n_sents.append(len(system_outputs))
                     for j in range(len(system_outputs)):
