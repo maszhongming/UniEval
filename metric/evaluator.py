@@ -158,9 +158,15 @@ class DialogEvaluator:
             elif dim in ['naturalness', 'coherence', 'groundedness', 'understandability']:
                 src_list, output_list, context_list = [], [], []
                 for i in range(n_data):
-                    src_list.append(data[i]['source'])
+                    if dim == 'coherence':
+                        src_list.append(data[i]['source'])
+                    else:
+                        src_list.append('')
                     output_list.append(data[i]['system_output'])
-                    context_list.append(data[i]['context'])
+                    if dim == 'groundedness':
+                        context_list.append(data[i]['context'])
+                    else:
+                        context_list.append('')
                 input_list = add_question(dimension=dim, output=output_list, 
                                           src=src_list, context=context_list, task=self.task)
                 score = self.scorer.score(input_list)
